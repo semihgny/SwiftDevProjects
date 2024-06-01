@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GestureRecognizerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car" translatesAutoresizingMaskIntoConstraints="NO" id="NeN-E9-n7G">
+                                <rect key="frame" x="49" y="73" width="295" height="247"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suprise" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eE-AT-PRQ">
+                                <rect key="frame" x="143" y="371" width="107" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="0tz-Mj-4pQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6eE-AT-PRQ" firstAttribute="top" secondItem="NeN-E9-n7G" secondAttribute="bottom" constant="51" id="6js-z4-LLy"/>
+                            <constraint firstItem="NeN-E9-n7G" firstAttribute="centerX" secondItem="6eE-AT-PRQ" secondAttribute="centerX" id="Bed-b6-qsm"/>
+                            <constraint firstItem="NeN-E9-n7G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="VRe-km-jdL"/>
+                            <constraint firstItem="NeN-E9-n7G" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="14" id="e5A-Kb-r4a"/>
+                            <constraint firstItem="6eE-AT-PRQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="ftK-Yy-8Ez"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6eE-AT-PRQ" secondAttribute="bottom" constant="380" id="pjY-sa-oS3"/>
+                            <constraint firstItem="NeN-E9-n7G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yaP-Rj-zFe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="carImage" destination="NeN-E9-n7G" id="9df-Qd-Cj5"/>
+                        <outlet property="myLabel" destination="6eE-AT-PRQ" id="yrz-8J-1ey"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="122.90076335877862" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="car" width="640" height="360"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
